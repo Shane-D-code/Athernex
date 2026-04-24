@@ -1,20 +1,11 @@
 package com.vyapaarsetu.aitester.data.model
 
-import androidx.room.Entity
-import androidx.room.PrimaryKey
-import androidx.room.TypeConverters
-import com.vyapaarsetu.aitester.data.local.Converters
-
 /**
- * Voice session data model for Room database.
+ * Voice session data model.
  * Stores complete audit trail of each voice interaction.
  */
-@Entity(tableName = "voice_sessions")
-@TypeConverters(Converters::class)
 data class VoiceSession(
-    @PrimaryKey(autoGenerate = true)
     val id: Long = 0,
-    
     val sessionId: String,
     val timestamp: Long = System.currentTimeMillis(),
     val customerName: String,
@@ -35,11 +26,8 @@ data class VoiceSession(
 /**
  * Order data model
  */
-@Entity(tableName = "orders")
 data class Order(
-    @PrimaryKey(autoGenerate = true)
     val id: Long = 0,
-    
     val orderId: String,
     val customerName: String,
     val amount: Int,
@@ -66,15 +54,6 @@ enum class OrderStatus {
         MODIFIED -> "Modified"
         PAYMENT_PENDING -> "Payment Pending"
         PAYMENT_COMPLETED -> "Payment Completed"
-    }
-
-    fun getColor(): androidx.compose.ui.graphics.Color = when (this) {
-        PENDING -> androidx.compose.ui.graphics.Color(0xFFF57C00)
-        CONFIRMED -> androidx.compose.ui.graphics.Color(0xFF2E7D32)
-        CANCELLED -> androidx.compose.ui.graphics.Color(0xFFC62828)
-        MODIFIED -> androidx.compose.ui.graphics.Color(0xFF1976D2)
-        PAYMENT_PENDING -> androidx.compose.ui.graphics.Color(0xFFF57C00)
-        PAYMENT_COMPLETED -> androidx.compose.ui.graphics.Color(0xFF2E7D32)
     }
 
     fun getEmoji(): String = when (this) {

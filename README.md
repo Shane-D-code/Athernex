@@ -95,6 +95,22 @@ python test_quick.py                # Quick smoke test
 pytest tests/test_brutal_language_detection.py -v
 ```
 
+### Web-Based Testing
+Open `voice-order-system/proxy.html` in your browser to test:
+- 🎙️ Voice recognition (speak in any language)
+- 📝 Text-based language detection
+- 🧪 Quick test phrases (all 5 languages)
+- 🔌 API endpoint testing
+- 📊 Real-time results visualization
+
+**Quick Start**:
+1. Start backend: `python src/api/main.py`
+2. Open `proxy.html` in browser
+3. Click "Check Backend Health"
+4. Test with voice or text!
+
+See [PROXY_GUIDE.md](voice-order-system/PROXY_GUIDE.md) for details.
+
 ## 🔧 Development
 
 ### Backend Development
