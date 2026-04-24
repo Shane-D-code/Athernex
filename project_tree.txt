@@ -1,0 +1,349 @@
+Folder PATH listing
+Volume serial number is 8E78-A308
+C:.
+|   .env.example
+|   .gitignore
+|   docker-compose.yml
+|   Dockerfile
+|   FILE_VERIFICATION_REPORT.md
+|   MASTER_INDEX.md
+|   ORGANIZATION_SUMMARY.md
+|   PROJECT_STRUCTURE_MASTER.md
+|   project_tree.txt
+|   pyproject.toml
+|   README.md
+|   README_NEW.md
+|   REORGANIZATION_COMPLETE.md
+|   REORGANIZATION_PLAN.md
+|   requirements.txt
+|   SYSTEM_OVERVIEW.md
+|   
++---.kiro
+|   \---specs
+|       +---ai-voice-order-confirmation-system
+|       |       .config.kiro
+|       |       design.md
+|       |       requirements.md
+|       |       tasks.md
+|       |       
+|       \---multilingual-voice-order-system
+|               .config.kiro
+|               design.md
+|               HARDWARE_OPTIMIZATION.md
+|               requirements.md
+|               tasks.md
+|               
++---archive
+|   |   README.md
+|   |   
+|   +---scripts
+|   |       init_db.py
+|   |       
+|   +---src
+|   |   |   main.py
+|   |   |   models.py
+|   |   |   __init__.py
+|   |   |   
+|   |   +---config
+|   |   |       settings.py
+|   |   |       system_config.py
+|   |   |       __init__.py
+|   |   |       
+|   |   +---event_bus
+|   |   |       event_bus.py
+|   |   |       __init__.py
+|   |   |       
+|   |   +---modules
+|   |   |   |   __init__.py
+|   |   |   |   
+|   |   |   +---audio
+|   |   |   |       audio_processor.py
+|   |   |   |       __init__.py
+|   |   |   |       
+|   |   |   +---call_controller
+|   |   |   |       call_controller.py
+|   |   |   |       __init__.py
+|   |   |   |       
+|   |   |   +---llm
+|   |   |   |       llm_module.py
+|   |   |   |       __init__.py
+|   |   |   |       
+|   |   |   +---logger
+|   |   |   |       logger_module.py
+|   |   |   |       __init__.py
+|   |   |   |       
+|   |   |   +---session_store
+|   |   |   |       session_store.py
+|   |   |   |       __init__.py
+|   |   |   |       
+|   |   |   +---state
+|   |   |   |       state_machine.py
+|   |   |   |       __init__.py
+|   |   |   |       
+|   |   |   +---stt
+|   |   |   |       stt_module.py
+|   |   |   |       __init__.py
+|   |   |   |       
+|   |   |   +---telephony
+|   |   |   |       telephony_module.py
+|   |   |   |       __init__.py
+|   |   |   |       
+|   |   |   \---tts
+|   |   |           tts_module.py
+|   |   |           __init__.py
+|   |   |           
+|   |   +---storage
+|   |   |       s3_client.py
+|   |   |       __init__.py
+|   |   |       
+|   |   \---stt
+|   |           engine.py
+|   |           __init__.py
+|   |           
+|   \---tests
+|           __init__.py
+|           
++---docs
+|   |   README.md
+|   |   
+|   +---android
+|   |       IMPLEMENTATION_GUIDE.md
+|   |       PROJECT_STRUCTURE.md
+|   |       QUICK_START.md
+|   |       
+|   +---backend
+|   |   |   FINAL_STATUS.md
+|   |   |   FIXES_APPLIED_SUMMARY.md
+|   |   |   HARDWARE_VALIDATION_REPORT.md
+|   |   |   INSTALLATION_GUIDE.md
+|   |   |   QUICKSTART_TASK1.md
+|   |   |   QUICK_REFERENCE.md
+|   |   |   START_HERE.md
+|   |   |   STATUS.md
+|   |   |   SYSTEM_STATUS_REPORT.md
+|   |   |   TODO.md
+|   |   |   WINDOWS_SETUP_GUIDE.md
+|   |   |   
+|   |   \---features
+|   |           FASTTEXT_INTEGRATION.md
+|   |           LANGUAGE_DETECTION_TEST_RESULTS.md
+|   |           TASK1_FASTTEXT_COMPLETE.md
+|   |           TASK5_LANGUAGE_TRAINING_COMPLETE.md
+|   |           TELEPHONY_INTEGRATION_GUIDE.md
+|   |           TELEPHONY_QUICK_START.md
+|   |           
+|   \---integration
+|           COMPLETE_INTEGRATION_GUIDE.md
+|           INTEGRATION_OVERVIEW.md
+|           INTEGRATION_STATUS.md
+|           
++---voice-order-system
+|   |   .env.example
+|   |   .gitignore
+|   |   docker-compose.yml
+|   |   README.md
+|   |   requirements.txt
+|   |   test_android_integration.py
+|   |   test_quick.py
+|   |   
+|   +---.pytest_cache
+|   |   |   .gitignore
+|   |   |   CACHEDIR.TAG
+|   |   |   README.md
+|   |   |   
+|   |   \---v
+|   |       \---cache
+|   |               lastfailed
+|   |               nodeids
+|   |               
+|   +---config
+|   |   |   config.py
+|   |   |   __init__.py
+|   |   |   
+|   |   \---__pycache__
+|   |           config.cpython-314.pyc
+|   |           __init__.cpython-314.pyc
+|   |           
+|   +---scripts
+|   |       auto_fix.py
+|   |       checkpoint1_validation.py
+|   |       checkpoint2_validation.py
+|   |       comprehensive_diagnostic.py
+|   |       post_install_setup.py
+|   |       quick_diagnostic.py
+|   |       run_brutal_tests.py
+|   |       setup_fasttext.py
+|   |       setup_ollama_and_fasttext.py
+|   |       start_ollama.py
+|   |       start_vosk.py
+|   |       start_whisper.py
+|   |       test_fasttext_quick.py
+|   |       test_integration.py
+|   |       test_ollama.py
+|   |       test_tts.py
+|   |       validate_hardware.py
+|   |       
+|   +---src
+|   |   |   __init__.py
+|   |   |   
+|   |   +---api
+|   |   |   |   android_routes.py
+|   |   |   |   main.py
+|   |   |   |   telephony_routes.py
+|   |   |   |   __init__.py
+|   |   |   |   
+|   |   |   \---__pycache__
+|   |   |           main.cpython-314.pyc
+|   |   |           __init__.cpython-314.pyc
+|   |   |           
+|   |   +---audio
+|   |   |   |   buffer.py
+|   |   |   |   processing.py
+|   |   |   |   vad.py
+|   |   |   |   __init__.py
+|   |   |   |   
+|   |   |   \---__pycache__
+|   |   |           buffer.cpython-314.pyc
+|   |   |           processing.cpython-314.pyc
+|   |   |           vad.cpython-314.pyc
+|   |   |           __init__.cpython-314.pyc
+|   |   |           
+|   |   +---confidence
+|   |   |   |   analyzer.py
+|   |   |   |   estimator.py
+|   |   |   |   __init__.py
+|   |   |   |   
+|   |   |   \---__pycache__
+|   |   |           analyzer.cpython-314.pyc
+|   |   |           estimator.cpython-314.pyc
+|   |   |           __init__.cpython-314.pyc
+|   |   |           
+|   |   +---dialogue
+|   |   |   |   manager.py
+|   |   |   |   __init__.py
+|   |   |   |   
+|   |   |   \---__pycache__
+|   |   |           manager.cpython-314.pyc
+|   |   |           __init__.cpython-314.pyc
+|   |   |           
+|   |   +---language
+|   |   |   |   detector.py
+|   |   |   |   fasttext_detector.py
+|   |   |   |   hybrid_detector.py
+|   |   |   |   trained_detector.py
+|   |   |   |   __init__.py
+|   |   |   |   
+|   |   |   \---__pycache__
+|   |   |           detector.cpython-314.pyc
+|   |   |           fasttext_detector.cpython-314.pyc
+|   |   |           hybrid_detector.cpython-314.pyc
+|   |   |           trained_detector.cpython-314.pyc
+|   |   |           __init__.cpython-314.pyc
+|   |   |           
+|   |   +---llm
+|   |   |   |   base.py
+|   |   |   |   huggingface_processor.py
+|   |   |   |   ollama_processor.py
+|   |   |   |   __init__.py
+|   |   |   |   
+|   |   |   \---__pycache__
+|   |   |           base.cpython-314.pyc
+|   |   |           huggingface_processor.cpython-314.pyc
+|   |   |           ollama_processor.cpython-314.pyc
+|   |   |           __init__.cpython-314.pyc
+|   |   |           
+|   |   +---orchestration
+|   |   |   |   cache.py
+|   |   |   |   orchestrator.py
+|   |   |   |   order_manager.py
+|   |   |   |   pipeline.py
+|   |   |   |   __init__.py
+|   |   |   |   
+|   |   |   \---__pycache__
+|   |   |           cache.cpython-314.pyc
+|   |   |           orchestrator.cpython-314.pyc
+|   |   |           order_manager.cpython-314.pyc
+|   |   |           pipeline.cpython-314.pyc
+|   |   |           __init__.cpython-314.pyc
+|   |   |           
+|   |   +---stt
+|   |   |   |   base.py
+|   |   |   |   vosk_engine.py
+|   |   |   |   whisper_engine.py
+|   |   |   |   __init__.py
+|   |   |   |   
+|   |   |   \---__pycache__
+|   |   |           base.cpython-314.pyc
+|   |   |           vosk_engine.cpython-314.pyc
+|   |   |           whisper_engine.cpython-314.pyc
+|   |   |           __init__.cpython-314.pyc
+|   |   |           
+|   |   +---telephony
+|   |   |       twilio_handler.py
+|   |   |       __init__.py
+|   |   |       
+|   |   +---tts
+|   |   |   |   base.py
+|   |   |   |   edge_engine.py
+|   |   |   |   piper_engine.py
+|   |   |   |   __init__.py
+|   |   |   |   
+|   |   |   \---__pycache__
+|   |   |           base.cpython-314.pyc
+|   |   |           edge_engine.cpython-314.pyc
+|   |   |           piper_engine.cpython-314.pyc
+|   |   |           __init__.cpython-314.pyc
+|   |   |           
+|   |   +---utils
+|   |   |   |   logging_config.py
+|   |   |   |   time_parser.py
+|   |   |   |   __init__.py
+|   |   |   |   
+|   |   |   \---__pycache__
+|   |   |           logging_config.cpython-314.pyc
+|   |   |           time_parser.cpython-314.pyc
+|   |   |           __init__.cpython-314.pyc
+|   |   |           
+|   |   \---__pycache__
+|   |           __init__.cpython-314.pyc
+|   |           
+|   \---tests
+|       |   test_brutal_comprehensive.py
+|       |   test_brutal_language_detection.py
+|       |   test_fasttext_detector.py
+|       |   test_stt_basic.py
+|       |   test_system_integration.py
+|       |   __init__.py
+|       |   
+|       \---__pycache__
+|               test_brutal_comprehensive.cpython-314-pytest-9.0.2.pyc
+|               test_brutal_language_detection.cpython-314-pytest-9.0.2.pyc
+|               test_system_integration.cpython-314-pytest-9.0.2.pyc
+|               __init__.cpython-314.pyc
+|               
+\---VyapaarSetuAITester
+    |   build.gradle.kts
+    |   README.md
+    |   
+    \---app
+        |   build.gradle.kts
+        |   
+        \---src
+            \---main
+                |   AndroidManifest.xml
+                |   
+                \---java
+                    \---com
+                        \---vyapaarsetu
+                            \---aitester
+                                |   VyapaarSetuApp.kt
+                                |   
+                                \---data
+                                    +---model
+                                    |       IntentResult.kt
+                                    |       LanguageResult.kt
+                                    |       VoiceSession.kt
+                                    |       
+                                    \---remote
+                                            ApiService.kt
+                                            

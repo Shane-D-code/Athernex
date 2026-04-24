@@ -53,6 +53,12 @@ class Settings(BaseSettings):
     # Hugging Face (Fallback)
     hf_api_key: str = ""
     
+    # Telephony (Twilio)
+    twilio_account_sid: str = ""
+    twilio_auth_token: str = ""
+    twilio_phone_number: str = ""
+    twilio_base_url: str = "https://your-server.com"  # Your public URL for webhooks
+    
     @property
     def intent_thresholds(self) -> Dict[str, float]:
         """Get intent-specific confidence thresholds."""
