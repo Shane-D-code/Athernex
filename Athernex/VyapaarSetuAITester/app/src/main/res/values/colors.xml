@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Black & Green Theme -->
+    <color name="bg_primary">#0A0A0A</color>
+    <color name="bg_surface">#111111</color>
+    <color name="bg_card">#1A1A1A</color>
+    <color name="bg_elevated">#222222</color>
+
+    <color name="green_primary">#00C853</color>
+    <color name="green_dark">#00952E</color>
+    <color name="green_light">#69F0AE</color>
+    <color name="green_dim">#1A3D2B</color>
+    <color name="green_ripple">#2600C853</color>
+
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B0B0B0</color>
+    <color name="text_muted">#606060</color>
+    <color name="text_green">#00C853</color>
+
+    <color name="border">#2A2A2A</color>
+    <color name="divider">#1E1E1E</color>
+
+    <color name="red_error">#FF4444</color>
+    <color name="amber_warn">#FFC107</color>
+    <color name="blue_info">#2196F3</color>
+
+    <color name="call_active">#00C853</color>
+    <color name="call_end">#FF4444</color>
+    <color name="call_ring">#FFC107</color>
+</resources>
